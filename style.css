@@ -20,6 +20,8 @@
   --text-inverse: #f7f3ea;
   --text-tag: #24352d;
   --accent-primary: #b85c3e;
+  --accent-hover: #963f2b;
+  --accent-soft: #f1ddd5;
 }
 
 html {
@@ -160,6 +162,41 @@ a:focus-visible {
   outline: 2px solid var(--accent-primary);
   outline-offset: 3px;
 }
+
+/* SKILLS*/
+
+.skills-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.skills-tags li {
+  background-color: var(--accent-soft);
+  color: var(--text-tag);
+  border: 1px solid #e4c8be;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.skills-tags li:hover {
+  transform: translateY(-3px);
+  background-color: var(--accent-primary);
+  color: #ffffff;
+  border-color: var(--accent-primary);
+  box-shadow: 0 8px 16px rgba(184, 92, 62, 0.3);
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
