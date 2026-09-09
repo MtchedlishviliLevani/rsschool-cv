@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +19,7 @@
   --text-muted: #737a74;
   --text-inverse: #f7f3ea;
   --text-tag: #24352d;
+  --accent-primary: #b85c3e;
 }
 
 html {
@@ -27,6 +30,7 @@ body {
   color: var(--text-body);
   line-height: 1.6;
   padding: 2rem 1rem;
+  font-family: "Inter", sans-serif;
 }
 
 .container {
@@ -69,6 +73,7 @@ header {
   transform: scale(1.06) rotate(-2deg);
   border-color: var(--accent-primary);
 }
+
 .role {
   font-size: 1.05rem;
   color: #c9d1ca;
@@ -79,6 +84,42 @@ header {
   opacity: 1;
   transform: none;
   animation: none;
+}
+
+/* Main */
+
+main {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  background-color: var(--bg-card);
+}
+/* ABOUT */
+
+.section-card {
+  border-bottom: 1px solid #e7e3da;
+  padding-bottom: 2.5rem;
+  scroll-margin-top: 4.5rem;
+  opacity: 1;
+  transform: none;
+}
+
+h2 {
+  font-size: 1.45rem;
+  color: var(--text-heading);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: var(--accent-primary);
+  margin-top: 0.5rem;
+  transition: width 0.5s ease 0.1s;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -114,7 +155,9 @@ header {
   }
   /* Header */
 
-  header {
+  header,
+  main,
+  footer {
     padding: 1.5rem;
   }
 
@@ -131,5 +174,11 @@ header {
 
   .role {
     font-size: 0.9rem;
+  }
+
+  /* ABOUT */
+  .section-card {
+    padding-bottom: 2rem;
+    scroll-margin-top: 3.6rem;
   }
 }
