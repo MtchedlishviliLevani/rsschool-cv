@@ -1,21 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="./assets/favicon.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
     <title>Levan Mtchedlishvili | Full-Stack Developer</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-
     <div class="container">
-
         <header>
             <div class="header-intro">
-                <img src="./assets/profile.png" alt="Levan Mtchedlishvili profile photo" class="profile-img">
+                <img src="./assets/profile.png" alt="Levan Mtchedlishvili profile photo" class="profile-img" />
                 <div>
                     <h1>Levan Mtchedlishvili</h1>
                     <p class="role">Full-Stack Developer</p>
@@ -26,24 +24,24 @@
             <section class="section-card">
                 <h2>About Me</h2>
                 <p>
-                    Self-taught Full-Stack Developer focused on building modern, maintainable web applications. My main
-                    focus is developing in-depth frontend expertise, particularly with React, while continuously
-                    improving my backend knowledge and software engineering fundamentals. I enjoy solving problems,
-                    writing clean and maintainable code, and continuously expanding my technical skills.
+                    Self-taught Full-Stack Developer focused on building modern,
+                    maintainable web applications. My main focus is developing in-depth
+                    frontend expertise, particularly with React, while continuously
+                    improving my backend knowledge and software engineering
+                    fundamentals. I enjoy solving problems, writing clean and
+                    maintainable code, and continuously expanding my technical skills.
                 </p>
             </section>
             <section class="section-card">
                 <h2>Contact Information</h2>
                 <ul class="contacts-list">
                     <li>
-
                         <img src="./assets/email.svg" />
                         <a href="mailto:mchedlishvililevan07@gmail.com" target="_blank" rel="noopener noreferrer">
                             mchedlishvililevan07@gmail.com
                         </a>
                     </li>
                     <li>
-
                         <img src="./assets/discord.svg" />
                         <a href="https://discord.com/users/levani_7" target="_blank" rel="noopener noreferrer">
                             Levani_7
@@ -88,9 +86,33 @@
                     <li>MySQL</li>
                 </ul>
             </section>
+
+            <section id="code" class="section-card">
+                <h2>Code Example</h2>
+                <p class="code-subtitle">
+                    Codewars Solution — <em>Remove all elements from list a that are also present in list b, while
+                        preserving the order of a </em>:
+                </p>
+                <div class="code-block">
+                    <pre><code id="code-snippet">function arrayDiff(a, b) {
+    return a.filter((item)=>!b.includes(item));
+}</code></pre>
+                    <button class="copy-btn" id="copyBtn" type="button" aria-label="Copy code to clipboard">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="9" y="9" width="13" height="13" rx="2" />
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                        </svg>
+                        <span>Copy</span>
+                    </button>
+                </div>
+            </section>
         </main>
         <footer></footer>
     </div>
+
+
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

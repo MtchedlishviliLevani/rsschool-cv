@@ -197,6 +197,71 @@ a:focus-visible {
   box-shadow: 0 8px 16px rgba(184, 92, 62, 0.3);
 }
 
+/* CODE */
+.code-subtitle {
+  margin-bottom: 0.75rem;
+}
+
+.code-block {
+  position: relative;
+}
+
+pre {
+  background-color: var(--bg-code);
+  color: #e6ede8;
+  padding: 1.25rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  border-left: 4px solid var(--accent-primary);
+}
+
+code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background-color: rgba(247, 243, 234, 0.08);
+  color: #e6ede8;
+  border: 1px solid rgba(247, 243, 234, 0.18);
+  padding: 0.35rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.15s ease,
+    border-color 0.2s ease;
+}
+
+.copy-btn img {
+  width: 14px;
+  height: 14px;
+}
+
+.copy-btn:hover {
+  background-color: rgba(247, 243, 234, 0.16);
+}
+
+.copy-btn:active {
+  transform: scale(0.94);
+}
+
+.copy-btn.copied {
+  background-color: var(--accent-secondary);
+  border-color: var(--accent-secondary);
+  color: #ffffff;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
