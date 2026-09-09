@@ -3,3 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --bg-body: #f4f1ea;
+  --bg-card: #fffcf7;
+  --bg-header: #24352d;
+  --bg-nav: #1c2921;
+  --bg-surface: #f1eee6;
+  --bg-code: #1c2420;
+  --bg-footer: #24352d;
+  --text-heading: #24352d;
+  --text-body: #303632;
+  --text-muted: #737a74;
+  --text-inverse: #f7f3ea;
+  --text-tag: #24352d;
+}
