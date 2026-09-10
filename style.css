@@ -112,6 +112,11 @@ main {
   transform: none;
 }
 
+.section-card:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
 h2 {
   font-size: 1.45rem;
   color: var(--text-heading);
