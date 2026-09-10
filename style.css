@@ -638,6 +638,54 @@ footer a:hover .rs-logo {
   margin: 0 0.2rem;
 }
 
+.projects-list li {
+  padding: 1.25rem;
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  background-color: var(--bg-surface);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.projects-list li:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-primary);
+  box-shadow: 0 14px 28px rgba(36, 53, 45, 0.12);
+}
+
+.projects-list h3 {
+  font-size: 1.1rem;
+  color: var(--text-heading);
+  margin-bottom: 0.35rem;
+  transition: color 0.2s ease;
+}
+
+.projects-list li:hover h3 {
+  color: var(--accent-primary);
+}
+
+.project-links {
+  margin-top: 0.85rem;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  margin-right: 1.25rem;
+  text-decoration: none;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
