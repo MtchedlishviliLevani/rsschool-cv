@@ -788,4 +788,8 @@ footer a:hover .rs-logo {
   .creative-dock div {
     display: none;
   }
+
+  h1 {
+    font-size: 1.75rem;
+  }
 }
