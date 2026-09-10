@@ -458,6 +458,61 @@ code {
   transform: translateX(5px);
 }
 
+footer {
+  padding: 2rem 3rem;
+  background-color: var(--bg-footer);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: #aeb8b0;
+}
+
+footer a {
+  position: relative;
+  color: #e7ede8;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+footer a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 1px;
+  background-color: var(--accent-primary);
+  transition: width 0.25s ease;
+}
+
+footer a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover::after {
+  width: 100%;
+}
+
+.rs-logo {
+  height: 50px;
+  width: auto;
+  display: block;
+  transition: transform 0.25s ease;
+  padding: 0.5rem;
+}
+
+footer a:hover .rs-logo {
+  transform: scale(1.08);
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
