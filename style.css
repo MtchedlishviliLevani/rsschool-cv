@@ -785,7 +785,7 @@ footer a:hover .rs-logo {
     flex-direction: column;
   }
 
-  .creative-dock div {
+  .dock-separator {
     display: none;
   }
 
