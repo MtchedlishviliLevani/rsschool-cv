@@ -741,7 +741,9 @@ footer a:hover .rs-logo {
     align-items: center;
     width: 100%;
   }
-
+  button {
+    all: unset;
+  }
   .burger-menu {
     display: flex;
     flex-direction: column;
@@ -749,7 +751,7 @@ footer a:hover .rs-logo {
     cursor: pointer;
   }
 
-  .burger-menu > li {
+  .burger-menu > span {
     background-color: white;
     width: 25px;
     height: 1px;
@@ -759,15 +761,15 @@ footer a:hover .rs-logo {
   }
 
   /* Burger open state */
-  .burger-menu.open > li:nth-child(1) {
+  .burger-menu.open > span:nth-child(1) {
     transform: translateY(9px) rotate(45deg);
   }
 
-  .burger-menu.open > li:nth-child(2) {
+  .burger-menu.open > span:nth-child(2) {
     opacity: 0;
   }
 
-  .burger-menu.open > li:nth-child(3) {
+  .burger-menu.open > span:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
   }
 
