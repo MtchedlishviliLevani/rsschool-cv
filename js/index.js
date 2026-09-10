@@ -12,4 +12,13 @@ copyBtn.addEventListener('click', async () => {
     setTimeout(() => {
         copyBtn.querySelector('span').textContent = 'Copy';
     }, 2000);
-})
+});
+
+
+const burgerMenu = document.querySelector(".burger-menu");
+const creativeDockWrapper = document.querySelector(".creative-dock-wrapper");
+
+burgerMenu.addEventListener("click", () => {
+    burgerMenu.classList.toggle("open");
+    creativeDockWrapper.classList.toggle("open");
+});
